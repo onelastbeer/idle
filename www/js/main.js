@@ -6,12 +6,9 @@ var enemy = new Vue({
     maxHp: 100,
     hp: 90
   },
-  methods: {
+  computed: {
     getWidth: function() {
       return 100*this.hp/this.maxHp
-    },
-    getColor: function() {
-      return barColor
     }
-  },
+  }
 })

@@ -10,8 +10,8 @@
 
 <body>
   <div id="enemy">
-    <div id="outerHp" :style="{ border: getColor }">
-      <div id="innerHp" :style="{ width: getWidth, background: getColor }">
+    <div id="outerHp" :style="{ borderColor: barColor }">
+      <div id="innerHp" :style="{ width: getWidth + '%', background: barColor }">
       </div>
     </div>
     {{name}}
