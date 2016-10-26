@@ -2,7 +2,7 @@ var enemy = new Vue({
   el: '#enemy',
   data: {
     barColor: '#1c448e',
-    name: 'Blorg the destroyer',
+    name: generator.enemyName(),
     maxHp: 100,
     hp: 10
   },
