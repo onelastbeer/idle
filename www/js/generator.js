@@ -4,7 +4,6 @@ var generator = {
     var i = generator.randVal(data.monsterAdj);
     var j = generator.randVal(data.monsterPrefix);
     var k = generator.randVal(data.monsterSuffix);
-    console.log();
     return i + " " + j + k;
   },
   weaponName: function() {
