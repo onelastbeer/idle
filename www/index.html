@@ -21,41 +21,10 @@
       </div>
       <div class="columns">
         <div id="map" class="column is-one-third">
-          <div class="columns is-gapless is-mobile mapcolumns">
-            <div class="column"><a class="button mapbutton">1</a></div>
-            <div class="column"><a class="button mapbutton is-active">2</a></div>
-            <div class="column"><a class="button mapbutton is-disabled">3</a></div>
-            <div class="column"><a class="button mapbutton is-disabled">4</a></div>
-            <div class="column"><a class="button mapbutton is-disabled">5</a></div>
-            <div class="column"><a class="button mapbutton is-disabled">6</a></div>
-            <div class="column"><a class="button mapbutton is-disabled">7</a></div>
-            <div class="column"><a class="button mapbutton is-disabled">8</a></div>
-            <div class="column"><a class="button mapbutton is-disabled">9</a></div>
-            <div class="column"><a class="button mapbutton is-disabled">10</a></div>
-          </div>
-          <div class="columns is-gapless is-mobile mapcolumns">
-            <div class="column"><a class="button mapbutton is-disabled">1</a></div>
-            <div class="column"><a class="button mapbutton is-disabled">2</a></div>
-            <div class="column"><a class="button mapbutton is-disabled">3</a></div>
-            <div class="column"><a class="button mapbutton is-disabled">4</a></div>
-            <div class="column"><a class="button mapbutton is-disabled">5</a></div>
-            <div class="column"><a class="button mapbutton is-disabled">6</a></div>
-            <div class="column"><a class="button mapbutton is-disabled">7</a></div>
-            <div class="column"><a class="button mapbutton is-disabled">8</a></div>
-            <div class="column"><a class="button mapbutton is-disabled">9</a></div>
-            <div class="column"><a class="button mapbutton is-disabled">10</a></div>
-          </div>
-          <div class="columns is-gapless is-mobile mapcolumns">
-            <div class="column"><a class="button mapbutton is-disabled">1</a></div>
-            <div class="column"><a class="button mapbutton is-disabled">2</a></div>
-            <div class="column"><a class="button mapbutton is-disabled">3</a></div>
-            <div class="column"><a class="button mapbutton is-disabled">4</a></div>
-            <div class="column"><a class="button mapbutton is-disabled">5</a></div>
-            <div class="column"><a class="button mapbutton is-disabled">6</a></div>
-            <div class="column"><a class="button mapbutton is-disabled">7</a></div>
-            <div class="column"><a class="button mapbutton is-disabled">8</a></div>
-            <div class="column"><a class="button mapbutton is-disabled">9</a></div>
-            <div class="column"><a class="button mapbutton is-disabled">10</a></div>
+          <div class="columns is-gapless is-multiline is-mobile mapcolumns">
+            <div v-for="index in 30" class="column is-1">
+              <a class="button mapbutton">{{ index }}</a>
+            </div>
           </div>
         </div>
         <div id="hero" class="column is-one-third is-offset-one-third">HERO</div>

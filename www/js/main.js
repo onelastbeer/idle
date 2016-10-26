@@ -13,6 +13,30 @@ var enemy = new Vue({
   }
 })
 
+Vue.component('room', {
+  //template: '<button v-on:click="counter += 1">{{ counter }}</button>',
+  // data is technically a function, so Vue won't
+  // complain, but we return the same object
+  // reference for each component instance
+  data: function () {
+    return data
+  }
+})
+
+var map = new Vue({
+  el: '#map',
+  data: {
+
+  }
+})
+
+var hero = new Vue({
+  el: '#hero',
+  data: {
+
+  }
+})
+
 
 var loop = function() {
   enemy.hp = enemy.hp - 1
