@@ -10,56 +10,58 @@
 </head>
 
 <body>
-  <div class="columns">
-    <div id="map" class="column is-one-third">
-      <div class="columns is-gapless is-mobile mapcolumns">
-        <div class="column"><a class="button mapbutton">1</a></div>
-        <div class="column"><a class="button mapbutton is-active">2</a></div>
-        <div class="column"><a class="button mapbutton is-disabled">3</a></div>
-        <div class="column"><a class="button mapbutton is-disabled">4</a></div>
-        <div class="column"><a class="button mapbutton is-disabled">5</a></div>
-        <div class="column"><a class="button mapbutton is-disabled">6</a></div>
-        <div class="column"><a class="button mapbutton is-disabled">7</a></div>
-        <div class="column"><a class="button mapbutton is-disabled">8</a></div>
-        <div class="column"><a class="button mapbutton is-disabled">9</a></div>
-        <div class="column"><a class="button mapbutton is-disabled">10</a></div>
-      </div>
-      <div class="columns is-gapless is-mobile mapcolumns">
-        <div class="column"><a class="button mapbutton is-disabled">1</a></div>
-        <div class="column"><a class="button mapbutton is-disabled">2</a></div>
-        <div class="column"><a class="button mapbutton is-disabled">3</a></div>
-        <div class="column"><a class="button mapbutton is-disabled">4</a></div>
-        <div class="column"><a class="button mapbutton is-disabled">5</a></div>
-        <div class="column"><a class="button mapbutton is-disabled">6</a></div>
-        <div class="column"><a class="button mapbutton is-disabled">7</a></div>
-        <div class="column"><a class="button mapbutton is-disabled">8</a></div>
-        <div class="column"><a class="button mapbutton is-disabled">9</a></div>
-        <div class="column"><a class="button mapbutton is-disabled">10</a></div>
-      </div>
-      <div class="columns is-gapless is-mobile mapcolumns">
-        <div class="column"><a class="button mapbutton is-disabled">1</a></div>
-        <div class="column"><a class="button mapbutton is-disabled">2</a></div>
-        <div class="column"><a class="button mapbutton is-disabled">3</a></div>
-        <div class="column"><a class="button mapbutton is-disabled">4</a></div>
-        <div class="column"><a class="button mapbutton is-disabled">5</a></div>
-        <div class="column"><a class="button mapbutton is-disabled">6</a></div>
-        <div class="column"><a class="button mapbutton is-disabled">7</a></div>
-        <div class="column"><a class="button mapbutton is-disabled">8</a></div>
-        <div class="column"><a class="button mapbutton is-disabled">9</a></div>
-        <div class="column"><a class="button mapbutton is-disabled">10</a></div>
-      </div>
-    </div>
-    <div class="column is-one-third" style="text-align: center">
-      <h1 class="title is-1">Idle</h1></div>
-    <div id="hero" class="column is-one-third"></div>
-  </div>
-  <div class="columns">
-    <div id="enemy" class="column is-half is-offset-one-quarter">
-      <div id="outerHp" :style="{ borderColor: barColor }">
-        <div id="innerHp" :style="{ width: getWidth + '%', background: barColor }">
+  <div class="container" style="min-width: 1440px">
+    <div class="columns">
+      <div id="map" class="column is-one-third">
+        <div class="columns is-gapless is-mobile mapcolumns">
+          <div class="column"><a class="button mapbutton">1</a></div>
+          <div class="column"><a class="button mapbutton is-active">2</a></div>
+          <div class="column"><a class="button mapbutton is-disabled">3</a></div>
+          <div class="column"><a class="button mapbutton is-disabled">4</a></div>
+          <div class="column"><a class="button mapbutton is-disabled">5</a></div>
+          <div class="column"><a class="button mapbutton is-disabled">6</a></div>
+          <div class="column"><a class="button mapbutton is-disabled">7</a></div>
+          <div class="column"><a class="button mapbutton is-disabled">8</a></div>
+          <div class="column"><a class="button mapbutton is-disabled">9</a></div>
+          <div class="column"><a class="button mapbutton is-disabled">10</a></div>
+        </div>
+        <div class="columns is-gapless is-mobile mapcolumns">
+          <div class="column"><a class="button mapbutton is-disabled">1</a></div>
+          <div class="column"><a class="button mapbutton is-disabled">2</a></div>
+          <div class="column"><a class="button mapbutton is-disabled">3</a></div>
+          <div class="column"><a class="button mapbutton is-disabled">4</a></div>
+          <div class="column"><a class="button mapbutton is-disabled">5</a></div>
+          <div class="column"><a class="button mapbutton is-disabled">6</a></div>
+          <div class="column"><a class="button mapbutton is-disabled">7</a></div>
+          <div class="column"><a class="button mapbutton is-disabled">8</a></div>
+          <div class="column"><a class="button mapbutton is-disabled">9</a></div>
+          <div class="column"><a class="button mapbutton is-disabled">10</a></div>
+        </div>
+        <div class="columns is-gapless is-mobile mapcolumns">
+          <div class="column"><a class="button mapbutton is-disabled">1</a></div>
+          <div class="column"><a class="button mapbutton is-disabled">2</a></div>
+          <div class="column"><a class="button mapbutton is-disabled">3</a></div>
+          <div class="column"><a class="button mapbutton is-disabled">4</a></div>
+          <div class="column"><a class="button mapbutton is-disabled">5</a></div>
+          <div class="column"><a class="button mapbutton is-disabled">6</a></div>
+          <div class="column"><a class="button mapbutton is-disabled">7</a></div>
+          <div class="column"><a class="button mapbutton is-disabled">8</a></div>
+          <div class="column"><a class="button mapbutton is-disabled">9</a></div>
+          <div class="column"><a class="button mapbutton is-disabled">10</a></div>
         </div>
       </div>
-      {{name}}
+      <div class="column is-one-third" style="text-align: center">
+        <h1 class="title is-1">Idle</h1></div>
+      <div id="hero" class="column is-one-third"></div>
+    </div>
+    <div class="columns">
+      <div id="enemy" class="column is-half is-offset-one-quarter">
+        <div id="outerHp" :style="{ borderColor: barColor }">
+          <div id="innerHp" :style="{ width: getWidth + '%', background: barColor }">
+          </div>
+        </div>
+        {{name}}
+      </div>
     </div>
   </div>
   <script src="js/data.js"></script>
