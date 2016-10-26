@@ -4,14 +4,19 @@ var enemy = new Vue({
     barColor: '#1c448e',
     name: 'Blorg the destroyer',
     maxHp: 100,
-    hp: 90
+    hp: 10
   },
-  methods: {
+  computed: {
     getWidth: function() {
       return 100*this.hp/this.maxHp
-    },
-    getColor: function() {
-      return barColor
     }
-  },
+  }
 })
+
+
+var loop = function() {
+  enemy.hp = enemy.hp - 1
+  if (enemy.hp <= 0) enemy.hp = enemy.maxHp
+}
+
+window.setInterval(function() { loop() }, 1000/60)
