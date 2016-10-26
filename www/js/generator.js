@@ -1,5 +1,5 @@
 var generator = {
-  seed: 1,
+  seed: Math.floor(Math.random()*1000000),
   enemyName: function() {
     var i = Math.floor(generator.random()*data.monsterAdj.length);
     var j = Math.floor(generator.random()*data.monsterPrefix.length);
