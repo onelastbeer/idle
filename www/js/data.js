@@ -1,12 +1,12 @@
 var data = {
   monsterAdj: [
-    "red","orange","yellow","green","blue","purple","gray","black","white",
-    "agreeable","brave","calm","delightful","eager","faithful","gentle",
-    "happy","jolly","kind","lively","nice","obedient","proud","relieved",
-    "silly","thankful","victorious","witty","zealous","angry","bewildered",
-    "clumsy","defeated","embarrassed","fierce","grumpy","helpless","itchy",
-    "jealous","lazy","mysterious","nervous","obnoxious","panicky","repulsives",
-    "cary","thoughtless","uptight","worried"
+    "Red","Orange","Yellow","Green","Blue","Purple","Gray","Black","White",
+    "Agreeable","Brave","Calm","Delightful","Eager","Faithful","Gentle",
+    "Happy","Jolly","Kind","Lively","Nice","Obedient","Proud","Relieved",
+    "Silly","Thankful","Victorious","Witty","Zealous","Angry","Bewildered",
+    "Clumsy","Defeated","Embarrassed","Fierce","Grumpy","Helpless","Itchy",
+    "Jealous","Lazy","Mysterious","Nervous","Obnoxious","Panicky","Repulsives",
+    "Cary","Thoughtless","Uptight","Worried","Drunk"
   ],
   monsterSuffix: [
     "critter","priest","wraith","blob","hyena","corpse","hound","wolf",
@@ -14,20 +14,50 @@ var data = {
     "gypsy","frog","zombie","lich","guardian","dragon","gargoyl","phoenix",
   ],
   monsterPrefix: [
-    "shadow","light","glow","dawn","twilight","warp","hex","war","infernal",
-    "killer","death","wart","gloom","ice","fire","frozen","cave","ocean",
-    "water","sea","lake","forest","underground","earth"
+    "Shadow","Light","Glow","Dawn","Twilight","Warp","Hex","War","Infernal",
+    "Killer","Death","Wart","Gloom","Ice","Fire","Frozen","Cave","Ocean",
+    "Water","Sea","Lake","Forest","Underground","Earth"
   ],
   itemAdj: [
-    "red","orange","yellow","green","blue","purple","gray","black","white",
-    "broad","chubby","crooked","curved","deep","flat","high","hollow","low",
-    "narrow","round","shallow","skinny","square","steep","straight","wide",
-    "big","colossal","fat","gigantic","great","huge","immense","large",
-    "little","mammoth","massive","miniature","petite","puny","scrawny","short",
-    "small","tall","teeny","teeny-tiny","tiny","abundant","empty","few","full",
-    "heavy","light","many","numerous","sparse","substantial"
+    "Red","Orange","Yellow","Green","Blue","Purple","Gray","Black","White",
+    "Broad","Chubby","Crooked","Curved","Deep","Flat","High","Hollow","Low",
+    "Narrow","Round","Shallow","Skinny","Square","Steep","Straight","Wide",
+    "Big","Colossal","Fat","Gigantic","Great","Huge","Immense","Large",
+    "Little","Mammoth","Massive","Miniature","Petite","Puny","Crawny","Short",
+    "Small","Tall","Teeny","Teeny-tiny","Tiny","Abundant","Heavy",
+    "Light","Sparse","Substantial","Sharp","Rotten","Old"
+  ],
+  itemDes: [
+    "Soul","Monster","Spirit","Hope","Life","Creep","Vermin","People",
+    "Devil"
   ],
   itemName: [
-    
+    "Crusher","Slicer","Slayer","Killer","Murderer","Annihilator","Destroyer"
+  ],
+  itemType: [
+    "Needle","Longsword","Sword","Wand","Staff","Rod","Hammer","Dagger",
+    "Longbow","Bow","Stick","Hook"
+  ],
+  placePrefix: [
+    "High","Twelve","Purified","Fallen","Forgotten","Nothern",
+    "Eastern","Western","Southern","Rebuilt","Holy","Corrupted","Eleven",
+    "Ethernal","Free","Enlightened","Imaginary","Last","New","Vast",
+    "Empty","Abandonned"
+  ],
+  placeSuffix: [
+    "Lands","Kingdoms","Counties","Mountains","Plains","Cities","Towns",
+    "Valleys"
+  ],
+  peopleTitle: [
+    "Lord","Prince","Princess","Lady","Sir","Knight","King","Queen",
+    "Squire","The Great","Apprentice"
+  ],
+  peopleName: [
+    "Proudbone","Lunabrook","Titanbrew","Coldsword","Lonedew","Mirthbough",
+    "Slateoak","Mirthdew","Twilightweaver","Bladewinds","Longvalor",
+    "Forestrunner","Truthblade","Proudhide","Icesprinter","Hazewoods",
+    "Ambersteam","Graywood","Goldbrook","Truthbane","Silentblossom",
+    "Sagewillow","Dragonroot","Riverfist","Fusestrength","Netherripper",
+    "Mossbough","Forestdrifter","Boulderscar","Bladegrain"
   ]
 }
