@@ -26,7 +26,9 @@ Vue.component('room', {
 var map = new Vue({
   el: '#map',
   data: {
-
+    weapon1: generator.weaponName(),
+    weapon2: generator.weaponName(),
+    weapon3: generator.weaponName()
   }
 })
 

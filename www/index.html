@@ -14,21 +14,34 @@
 <body>
   <section class="section">
     <div class="container" style="max-width: 1440px">
+
+      <!--  TITLE  -->
       <div class="columns">
         <div class="column is-one-third is-offset-one-third" style="text-align: center">
           <h1 class="title is-1">Idle</h1>
         </div>
       </div>
+
       <div class="columns">
+
+        <!--  MAP  -->
         <div id="map" class="column is-one-third">
           <div class="columns is-gapless is-multiline is-mobile mapcolumns">
             <div v-for="index in 30" class="column is-1">
               <a class="button mapbutton">{{ index }}</a>
             </div>
           </div>
+          <p>{{ weapon1 }}</p>
+          <p style="color: #573280">{{ weapon2 }}</p>
+          <p style="color: #f1d302">{{ weapon3 }}</p>
         </div>
+
+        <!--  HERO  -->
         <div id="hero" class="column is-one-third is-offset-one-third">HERO</div>
+
       </div>
+
+      <!--  ENEMY  -->
       <div class="columns">
         <div id="enemy" class="column is-half is-offset-one-quarter">
           <div id="outerHp" :style="{ borderColor: barColor }">
@@ -38,6 +51,7 @@
           {{name}}
         </div>
       </div>
+
     </div>
   </section>
   <script src="js/data.js"></script>
