@@ -36,7 +36,8 @@ var data = {
   ],
   itemType: [
     "Needle","Longsword","Sword","Wand","Staff","Rod","Hammer","Dagger",
-    "Longbow","Bow","Stick","Hook"
+    "Longbow","Bow","Stick","Hook","Stone","Boulder","Mace","Chalice",
+    "Knife","Trident","Scythe"
   ],
   placePrefix: [
     "High","Twelve","Purified","Fallen","Forgotten","Nothern",
