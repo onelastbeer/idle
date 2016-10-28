@@ -1,11 +1,15 @@
 let generateMap = function() {
   let generateRoom = function() {
     return {
-      monster: "name",
-      weapons: new Array(6).fill(1).map(function() {return generator.weaponName()})
+      monster: generator.enemyName(),
+      weapons: new Array(6).fill(1).map(function() {
+        return generator.weaponName()
+      })
     }
   }
-  return new Array(36).fill(1).map(function() {return generateRoom()})
+  return new Array(36).fill(1).map(function() {
+    return generateRoom()
+  })
 }
 
 var map = new Vue({
@@ -16,7 +20,10 @@ var map = new Vue({
   },
   methods: {
     select: function(i) {
-      console.log(i.index);
+      this.selected = i.index
+    },
+    currentEnemy: function() {
+      return this.rooms[this.selected - 1].monster
     }
   }
 })

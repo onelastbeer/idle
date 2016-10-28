@@ -8,7 +8,12 @@ var enemy = new Vue({
   },
   computed: {
     getWidth: function() {
-      return 100*this.hp/this.maxHp
+      return 100 * this.hp / this.maxHp
+    },
+  },
+  methods: {
+    currentName: function() {
+      return map.currentEnemy()
     }
   }
 })

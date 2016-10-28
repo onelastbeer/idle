@@ -28,14 +28,14 @@
         <div id="map" class="column is-one-third">
           <div class="columns is-gapless is-multiline is-mobile mapcolumns">
 
-            <div v-for="index in 30" class="column is-1">
-              <a class="button mapbutton" @click="select({ index })">{{ index }}</a>
+            <div v-for="index in 36" class="column is-1">
+              <a class="button mapbutton" :class="{ 'is-active': selected == index }" @click="select({ index })">{{ index }}</a>
             </div>
 
           </div>
-          <p>{{ rooms[0].weapons[0] }}</p>
-          <p style="color: #573280">{{ rooms[0].weapons[1] }}</p>
-          <p style="color: #f1d302">{{ rooms[0].weapons[2] }}</p>
+          <p>{{ rooms[selected-1].weapons[0] }}</p>
+          <p style="color: #573280">{{ rooms[selected-1].weapons[1] }}</p>
+          <p style="color: #f1d302">{{ rooms[selected-1].weapons[2] }}</p>
         </div>
 
         <!--  HERO  -->
@@ -50,7 +50,7 @@
             <div id="innerHp" :style="{ width: getWidth + '%', background: barColor }">
             </div>
           </div>
-          {{name}}
+          {{ currentName() }}
         </div>
       </div>
 
