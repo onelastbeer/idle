@@ -4,66 +4,56 @@
 <head>
   <meta charset="utf-8">
   <title>Idle</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.2.3/css/bulma.min.css">
   <link rel="stylesheet" href="css/main.css">
   <script src="https://unpkg.com/vue/dist/vue.js"></script>
 </head>
 
 <body>
-  <div class="container" style="max-width: 1440px">
-    <div class="columns">
-      <div id="map" class="column is-one-third">
-        <div class="columns is-gapless is-mobile mapcolumns">
-          <div class="column"><a class="button mapbutton">1</a></div>
-          <div class="column"><a class="button mapbutton is-active">2</a></div>
-          <div class="column"><a class="button mapbutton is-disabled">3</a></div>
-          <div class="column"><a class="button mapbutton is-disabled">4</a></div>
-          <div class="column"><a class="button mapbutton is-disabled">5</a></div>
-          <div class="column"><a class="button mapbutton is-disabled">6</a></div>
-          <div class="column"><a class="button mapbutton is-disabled">7</a></div>
-          <div class="column"><a class="button mapbutton is-disabled">8</a></div>
-          <div class="column"><a class="button mapbutton is-disabled">9</a></div>
-          <div class="column"><a class="button mapbutton is-disabled">10</a></div>
-        </div>
-        <div class="columns is-gapless is-mobile mapcolumns">
-          <div class="column"><a class="button mapbutton is-disabled">1</a></div>
-          <div class="column"><a class="button mapbutton is-disabled">2</a></div>
-          <div class="column"><a class="button mapbutton is-disabled">3</a></div>
-          <div class="column"><a class="button mapbutton is-disabled">4</a></div>
-          <div class="column"><a class="button mapbutton is-disabled">5</a></div>
-          <div class="column"><a class="button mapbutton is-disabled">6</a></div>
-          <div class="column"><a class="button mapbutton is-disabled">7</a></div>
-          <div class="column"><a class="button mapbutton is-disabled">8</a></div>
-          <div class="column"><a class="button mapbutton is-disabled">9</a></div>
-          <div class="column"><a class="button mapbutton is-disabled">10</a></div>
-        </div>
-        <div class="columns is-gapless is-mobile mapcolumns">
-          <div class="column"><a class="button mapbutton is-disabled">1</a></div>
-          <div class="column"><a class="button mapbutton is-disabled">2</a></div>
-          <div class="column"><a class="button mapbutton is-disabled">3</a></div>
-          <div class="column"><a class="button mapbutton is-disabled">4</a></div>
-          <div class="column"><a class="button mapbutton is-disabled">5</a></div>
-          <div class="column"><a class="button mapbutton is-disabled">6</a></div>
-          <div class="column"><a class="button mapbutton is-disabled">7</a></div>
-          <div class="column"><a class="button mapbutton is-disabled">8</a></div>
-          <div class="column"><a class="button mapbutton is-disabled">9</a></div>
-          <div class="column"><a class="button mapbutton is-disabled">10</a></div>
+  <section class="section">
+    <div class="container" style="max-width: 1440px">
+
+      <!--  TITLE  -->
+      <div class="columns">
+        <div class="column is-one-third is-offset-one-third" style="text-align: center">
+          <h1 class="title is-1">Idle</h1>
         </div>
       </div>
-      <div class="column is-one-third" style="text-align: center">
-        <h1 class="title is-1">Idle</h1></div>
-      <div id="hero" class="column is-one-third"></div>
-    </div>
-    <div class="columns">
-      <div id="enemy" class="column is-half is-offset-one-quarter">
-        <div id="outerHp" :style="{ borderColor: barColor }">
-          <div id="innerHp" :style="{ width: getWidth + '%', background: barColor }">
+
+      <div class="columns">
+
+        <!--  MAP  -->
+        <div id="map" class="column is-one-third">
+          <div class="columns is-gapless is-multiline is-mobile mapcolumns">
+            <div v-for="index in 30" class="column is-1">
+              <a class="button mapbutton">{{ index }}</a>
+            </div>
           </div>
+          <p>{{ weapon1 }}</p>
+          <p style="color: #573280">{{ weapon2 }}</p>
+          <p style="color: #f1d302">{{ weapon3 }}</p>
         </div>
-        {{name}}
+
+        <!--  HERO  -->
+        <div id="hero" class="column is-one-third is-offset-one-third">HERO</div>
+
       </div>
+
+      <!--  ENEMY  -->
+      <div class="columns">
+        <div id="enemy" class="column is-half is-offset-one-quarter">
+          <div id="outerHp" :style="{ borderColor: barColor }">
+            <div id="innerHp" :style="{ width: getWidth + '%', background: barColor }">
+            </div>
+          </div>
+          {{name}}
+        </div>
+      </div>
+
     </div>
-  </div>
+  </section>
   <script src="js/data.js"></script>
   <script src="js/generator.js"></script>
   <script src="js/main.js"></script>

@@ -37,17 +37,18 @@ var data = {
   itemType: [
     "Needle","Longsword","Sword","Wand","Staff","Rod","Hammer","Dagger",
     "Longbow","Bow","Stick","Hook","Stone","Boulder","Mace","Chalice",
-    "Knife","Trident","Scythe"
+    "Knife","Trident","Scythe","Longbow","Bow","Stick","Hook","Mace",
+    "Lance","Crossbow"
   ],
   placePrefix: [
     "High","Twelve","Purified","Fallen","Forgotten","Nothern",
     "Eastern","Western","Southern","Rebuilt","Holy","Corrupted","Eleven",
-    "Ethernal","Free","Enlightened","Imaginary","Last","New","Vast",
-    "Empty","Abandonned"
+    "Ethereal","Free","Enlightened","Imaginary","Last","New","Vast",
+    "Empty","Abandonned","Eternal"
   ],
   placeSuffix: [
     "Lands","Kingdoms","Counties","Mountains","Plains","Cities","Towns",
-    "Valleys"
+    "Valleys","Caves","Realms"
   ],
   peopleTitle: [
     "Lord","Prince","Princess","Lady","Sir","Knight","King","Queen",
@@ -59,6 +60,6 @@ var data = {
     "Forestrunner","Truthblade","Proudhide","Icesprinter","Hazewoods",
     "Ambersteam","Graywood","Goldbrook","Truthbane","Silentblossom",
     "Sagewillow","Dragonroot","Riverfist","Fusestrength","Netherripper",
-    "Mossbough","Forestdrifter","Boulderscar","Bladegrain"
+    "Mossbough","Forestdrifter","Boulderscar","Bladegrain","Merlin","Ambroise"
   ]
 }

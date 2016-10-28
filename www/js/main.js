@@ -1,7 +1,7 @@
 var enemy = new Vue({
   el: '#enemy',
   data: {
-    barColor: '#1c448e',
+    barColor: '#d11149',
     name: generator.enemyName(),
     maxHp: 100,
     hp: 10
@@ -10,6 +10,32 @@ var enemy = new Vue({
     getWidth: function() {
       return 100*this.hp/this.maxHp
     }
+  }
+})
+
+Vue.component('room', {
+  //template: '<button v-on:click="counter += 1">{{ counter }}</button>',
+  // data is technically a function, so Vue won't
+  // complain, but we return the same object
+  // reference for each component instance
+  data: function () {
+    return data
+  }
+})
+
+var map = new Vue({
+  el: '#map',
+  data: {
+    weapon1: generator.weaponName(),
+    weapon2: generator.weaponName(),
+    weapon3: generator.weaponName()
+  }
+})
+
+var hero = new Vue({
+  el: '#hero',
+  data: {
+
   }
 })
 
