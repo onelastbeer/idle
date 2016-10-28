@@ -27,13 +27,15 @@
         <!--  MAP  -->
         <div id="map" class="column is-one-third">
           <div class="columns is-gapless is-multiline is-mobile mapcolumns">
+
             <div v-for="index in 30" class="column is-1">
-              <a class="button mapbutton">{{ index }}</a>
+              <a class="button mapbutton" @click="select({ index })">{{ index }}</a>
             </div>
+
           </div>
-          <p>{{ weapon1 }}</p>
-          <p style="color: #573280">{{ weapon2 }}</p>
-          <p style="color: #f1d302">{{ weapon3 }}</p>
+          <p>{{ rooms[0].weapons[0] }}</p>
+          <p style="color: #573280">{{ rooms[0].weapons[1] }}</p>
+          <p style="color: #f1d302">{{ rooms[0].weapons[2] }}</p>
         </div>
 
         <!--  HERO  -->
@@ -56,6 +58,9 @@
   </section>
   <script src="js/data.js"></script>
   <script src="js/generator.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/hero.js"></script>
+  <script src="js/enemy.js"></script>
   <script src="js/main.js"></script>
 </body>
 
