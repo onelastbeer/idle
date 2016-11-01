@@ -21,7 +21,7 @@ var data = {
   itemAdj: [
     "Red","Orange","Yellow","Green","Blue","Purple","Gray","Black","White",
     "Broad","Chubby","Crooked","Curved","Deep","Flat","High","Hollow","Low",
-    "Narrow","Round","Shallow","Skinny","Square","Steep","Straight","Wide",
+    "Narrow","Round","Shallow","Skinny","Square","Straight","Wide",
     "Big","Colossal","Fat","Gigantic","Great","Huge","Immense","Large",
     "Little","Mammoth","Massive","Miniature","Petite","Puny","Crawny","Short",
     "Small","Tall","Teeny","Teeny-tiny","Tiny","Abundant","Heavy",
@@ -31,14 +31,29 @@ var data = {
     "Soul","Monster","Spirit","Hope","Life","Creep","Vermin","People",
     "Devil"
   ],
-  itemName: [
+  armorName: [
+    "Protector","Defender","Bulwark","Benefactor","Guardian","Blocker",
+    "Stopper","Savior"
+  ],
+  weaponName: [
     "Crusher","Slicer","Slayer","Killer","Murderer","Annihilator","Destroyer"
   ],
-  itemType: [
+  weaponType: [
     "Needle","Longsword","Sword","Wand","Staff","Rod","Hammer","Dagger",
     "Longbow","Bow","Stick","Hook","Stone","Boulder","Mace","Chalice",
     "Knife","Trident","Scythe","Longbow","Bow","Stick","Hook","Mace",
     "Lance","Crossbow"
+  ],
+  armorType: [
+    "Headgear","Plastron","Carapace","Shinguards","Shield","Torso","Helmet",
+    "Hat","Body Armor"
+  ],
+  accessoryType: [
+    "Ring","Necklace","Amulet","Stone Shard","Ruby","Diamond","Torc","Bracelet",
+    "Anklet","Crown","Tiara","Relic","Rune","Book","Voodoo Doll"
+  ],
+  bootsType: [
+    "Sandals","Snow Boots","Boots","Slippers","Shoes"
   ],
   placePrefix: [
     "High","Twelve","Purified","Fallen","Forgotten","Nothern",
@@ -60,6 +75,7 @@ var data = {
     "Forestrunner","Truthblade","Proudhide","Icesprinter","Hazewoods",
     "Ambersteam","Graywood","Goldbrook","Truthbane","Silentblossom",
     "Sagewillow","Dragonroot","Riverfist","Fusestrength","Netherripper",
-    "Mossbough","Forestdrifter","Boulderscar","Bladegrain","Merlin","Ambroise"
+    "Mossbough","Forestdrifter","Boulderscar","Bladegrain","Merlin","Ambroise",
+    "Ola"
   ]
 }

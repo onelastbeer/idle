@@ -16,27 +16,93 @@ var generator = {
       return generator.weaponNameTitle();
     }
   },
-  weaponNamePlace: function() {
-    return generator.itemName() + " of the " + generator.place();
-  },
-  weaponNameTitle: function() {
-    return generator.title() + "'s " + generator.itemName();
-  },
-  itemName: function() {
+  accesoryName: function() {
     var rand = generator.random();
-    if(rand < 0.3) {
-      return generator.itemNameDescription();
+    if(rand < 0.5) {
+      return generator.accessoryNamePlace();
     } else {
-      return generator.itemNameType();
+      return generator.accessoryNameTitle();
     }
   },
-  itemNameType: function() {
-    return generator.randVal(data.itemAdj) + " "
-      + generator.randVal(data.itemType);
+  bootsName: function() {
+    var rand = generator.random();
+    if(rand < 0.5) {
+      return generator.bootsNamePlace();
+    } else {
+      return generator.bootsNameTitle();
+    }
   },
-  itemNameDescription: function() {
+  armorName: function() {
+    var rand = generator.random();
+    if(rand < 0.5) {
+      return generator.armorNamePlace();
+    } else {
+      return generator.armorNameTitle();
+    }
+  },
+  weaponNamePlace: function() {
+    return generator.weaponNamePicker() + " of the " + generator.place();
+  },
+  accessoryNamePlace: function() {
+    return generator.accessoryNameType() + " of the " + generator.place();
+  },
+  bootsNamePlace: function() {
+    return generator.bootsNameType() + " of the " + generator.place();
+  },
+  armorNamePlace: function() {
+    return generator.armorNamePicker() + " of the " + generator.place();
+  },
+  accessoryNameTitle: function() {
+    return generator.title() + "'s " + generator.accessoryNameType();
+  },
+  weaponNameTitle: function() {
+    return generator.title() + "'s " + generator.weaponNamePicker();
+  },
+  bootsNameTitle: function() {
+    return generator.title() + "'s " + generator.bootsNameType();
+  },
+  armorNameTitle: function() {
+    return generator.title() + "'s " + generator.armorNamePicker();
+  },
+  weaponNamePicker: function() {
+    var rand = generator.random();
+    if(rand < 0.3) {
+      return generator.weaponNameDescription();
+    } else {
+      return generator.weaponNameType();
+    }
+  },
+  armorNamePicker: function() {
+    var rand = generator.random();
+    if(rand < 0.4) {
+      return generator.armorNameDescription();
+    } else {
+      return generator.armorNameType();
+    }
+  },
+  weaponNameType: function() {
+    return generator.randVal(data.itemAdj) + " "
+      + generator.randVal(data.weaponType);
+  },
+  accessoryNameType: function() {
+    return generator.randVal(data.itemAdj) + " "
+      + generator.randVal(data.accessoryType);
+  },
+  bootsNameType: function() {
+    return generator.randVal(data.itemAdj) + " "
+      + generator.randVal(data.bootsType);
+  },
+  armorNameType: function() {
+    return generator.randVal(data.itemAdj) + " "
+      + generator.randVal(data.armorType);
+  },
+  weaponNameDescription: function() {
     return generator.randVal(data.itemDes) + " "
-      + generator.randVal(data.itemName)
+      + generator.randVal(data.weaponName)
+  },
+  armorNameDescription: function() {
+    return generator.randVal(data.itemDes) + " "
+      + generator.randVal(data.armorName)
   },
   place: function() {
     return generator.randVal(data.placePrefix) + " "
