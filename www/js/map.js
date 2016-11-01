@@ -2,8 +2,16 @@ let generateMap = function() {
   let generateRoom = function() {
     return {
       monster: generator.enemyName(),
-      weapons: new Array(6).fill(1).map(function() {
-        return generator.weaponName()
+      items: new Array(6).fill(1).map(function() {
+        var rand = generator.random();
+        if(rand < 0.2)
+          return generator.bootsName();
+        else if(rand < 0.4)
+          return generator.accesoryName();
+        else if(rand < 0.6)
+          return generator.armorName();
+        else
+          return generator.weaponName();
       })
     }
   }
