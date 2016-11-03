@@ -2,6 +2,15 @@ let initialSeed = Math.floor(Math.random()*1000000);
 
 var generator = {
   seed: initialSeed,
+
+  choose: function(a, b, r) {
+    let rand = generator.random();
+    if (rand < r)
+      return a()
+    else
+      return b()
+  },
+
   enemyName: function() {
     var i = generator.randVal(data.monsterAdj);
     var j = generator.randVal(data.monsterPrefix);
@@ -9,36 +18,16 @@ var generator = {
     return i + " " + j + k;
   },
   weaponName: function() {
-    var rand = generator.random();
-    if(rand < 0.5) {
-      return generator.weaponNamePlace();
-    } else {
-      return generator.weaponNameTitle();
-    }
+    return generator.choose(generator.weaponNamePlace, generator.weaponNameTitle, 0.5)
   },
   accesoryName: function() {
-    var rand = generator.random();
-    if(rand < 0.5) {
-      return generator.accessoryNamePlace();
-    } else {
-      return generator.accessoryNameTitle();
-    }
+    return generator.choose(generator.accessoryNamePlace, generator.accessoryNameTitle, 0.5)
   },
   bootsName: function() {
-    var rand = generator.random();
-    if(rand < 0.5) {
-      return generator.bootsNamePlace();
-    } else {
-      return generator.bootsNameTitle();
-    }
+    return generator.choose(generator.bootsNamePlace, generator.bootsNameTitle, 0.5)
   },
   armorName: function() {
-    var rand = generator.random();
-    if(rand < 0.5) {
-      return generator.armorNamePlace();
-    } else {
-      return generator.armorNameTitle();
-    }
+    return generator.choose(generator.armorNamePlace, generator.armorNameTitle, 0.5)
   },
   weaponNamePlace: function() {
     return generator.weaponNamePicker() + " of the " + generator.place();
@@ -65,20 +54,10 @@ var generator = {
     return generator.title() + "'s " + generator.armorNamePicker();
   },
   weaponNamePicker: function() {
-    var rand = generator.random();
-    if(rand < 0.3) {
-      return generator.weaponNameDescription();
-    } else {
-      return generator.weaponNameType();
-    }
+    return generator.choose(generator.weaponNameDescription, generator.weaponNameType, 0.3)
   },
   armorNamePicker: function() {
-    var rand = generator.random();
-    if(rand < 0.4) {
-      return generator.armorNameDescription();
-    } else {
-      return generator.armorNameType();
-    }
+    return generator.choose(generator.armorNameDescription, generator.armorNameType, 0.4)
   },
   weaponNameType: function() {
     return generator.randVal(data.itemAdj) + " "
